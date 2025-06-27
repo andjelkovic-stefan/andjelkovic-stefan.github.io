@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: rgb(245, 245, 245);
+    font-family: "Inter", sans-serif;
+}
+.main{
+    margin: 0 auto;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 900px;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1{
+    font-weight: normal;
+}
+header{
+    padding: 20px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header button{
+    height: 30px;
+    background-color: white;
+    border: 1px rgb(157, 157, 157) solid;
+    border-radius: 5px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+footer{
+    padding: 20px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.board {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.column {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    width: 240px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.column h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+
+.todo h2 {
+    background-color: #f86f45;
+}
+.doing h2 {
+    background-color: #4a90e2;
+}
+.done h2 {
+    background-color: #4caf50;
+}
+
+.task {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.task button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.add-new {
+    display: flex;
+    gap: 5px;
+}
+
+.add-new input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+}
+
+.add-new button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+}
+.task[draggable="true"] {
+    cursor: grab;
+}
+.drop-indicator {
+  height: 4px;
+  background-color: #3498db;
+  margin: 4px 0;
+  border-radius: 2px;
+}
